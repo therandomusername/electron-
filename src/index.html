@@ -1,0 +1,361 @@
+<!DOCTYPE XHTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Symulator - 0.0.1</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+    <div id="row-eq">
+        <div id="vs">VS</div>
+        <div id="lefty">
+            <br>
+            <div id="openPoints_1" style="cursor:pointer;position:absolute; left:160px;top:23px;height: 32px;width: 32px;background: url(../assets/icons/lvlup.gif);"></div>
+            <div id="addPoints_1" style="width:200px;height: 180px;display:none;position:absolute; left:250px;top:50px; border: 2px solid hotpink; background-color: honeydew"> 
+               <br> Siła<br>
+                    <button id="subStr_1">-</button><input id="str_1" typu="number" step="1" style="width: 5em;"> <button id="addStr_1">+</button>
+                    <br> Intelekt<br>
+                    <button id="subInt_1">-</button><input id="int_1" typu="number" step="1" style="width: 5em;"> <button id="addInt_1">+</button>
+                    <br> Zręczność<br>
+                    <button id="subAgil_1">-</button><input id="agil_1" typu="number" step="1" style="width: 5em;"> <button id="addAgil_1">+</button>
+                    <br><br><button id="closePoints_1">Zamknij</button>
+            </div>
+            <input id="player_1_lvl" type="number" min="0" max="100" step="1" placeholder="Podaj poziom" style="width: 8em;">
+            <select id="profa1">
+                <option value="" disabled selected hidden>Profesja</option>
+                <option value="trop">Tropiciel</option>
+                <option value="mag">Mag</option>
+                <option value="wojownik">Wojownik</option>
+                <option value="tancerz">Tancerz ostrzy</option>
+                <option value="lowca">Łowca</option>
+                <option value="paladyn">Paladyn</option>
+            </select>
+            <br>
+            <br>
+            <div id="left_container">
+                <div id="equip_1" class="equip">
+                    <div id="line_1"></div>
+                    <img id="helm" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_2"></div>
+                    <img id="pier" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="naszyj" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="rece" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_3"></div>
+                    <img id="first" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="zbroja" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="second" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_4"></div>
+                    <img id="buty" class="eq_item" src="../assets/icons/item-none.png">
+                </div>
+                <div id="mistrz_1" class="mistrz" >
+                
+                
+                </div>
+                <div id="stats_1_1" class="stats">
+                    <hr>
+                    <div id="dmg_1">Atak: </div>
+                    <hr>
+                    <br>
+                    <div id="hp_1">HP: </div>
+                    <hr>
+                    <br>
+                    <div id="armor_1">Pancerz: </div>
+                    <hr>
+                    <br>
+                    <div id="sa_1">SA: </div>
+                    <hr>
+                    <br>
+                    <div id="odp_1">Odp: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_val_1">Krytyk: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_1">Siła fiz: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_m_1">Siła mag: </div>
+                    <hr>
+                    <br>
+                    <div id="evade_1">Unik: </div>
+                    <hr>
+                    <br>
+                    <div id="block_1">Blok: </div>
+                    <hr>
+                    <br>
+                    <div id="hp_reg_1">Lek tur: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_hp_reg_1">Obn. lek tur: </div>
+                    <hr>
+                </div>
+                <div id="stats_1_2" class="stats">
+                    <hr>
+                    <div id="basic_1">Siła/Int/Zr: </div>
+                    <hr>
+                    <br>
+                    <div id="abs_fiz_1">Abs fiz: </div>
+                    <hr>
+                    <br>
+                    <div id="abs_1">Abs mag: </div>
+                    <hr>
+                    <br>
+                    <div id="energy_1">Energia: </div>
+                    <hr>
+                    <br>
+                    <div id="mana_1">Mana: </div>
+                    <hr>
+                    <br>
+                    <div id="evade_low_1">Ob. uniku: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_slow_1">Ob. sa: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_res_crit_1">Ob. odp/ck: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_energy_mana_1">Nisz.. en/many: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_abs_armor_1">Nisz. abs/panc: </div>
+                    <hr>
+                    <br>
+                    <div id="self_dmg_1">Self dmg: </div>
+                    <hr>
+                    <br>
+                    <div id="legbons_1">Legbony: </div>
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div class="buttons-container">
+                <button class="clearUM"id="clearUM_1">Wyczyść UM</button>
+                <button class="save"id="save_1">Zapisz set</button>
+                <button class="read"id="read_1">wczytaj set</button>
+            </div>
+            <br>
+            <div id="umPoints_1" class="umpoints">0/0</div>
+            <span class="container-header">Dostępne od 25 poziomu i 1 pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="1_11" value="0" enabled="0"></div>
+                <div class="um" id="1_12" value="0"enabled="0"></div>
+                <div class="um" id="1_13" value="0"enabled="0"></div>
+                <div class="um" id="1_14" value="0"enabled="0"></div>
+                <div class="um" id="1_15" value="0"enabled="0"></div>
+                <div class="um" id="1_16" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 35 poziomu i 10 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="1_21" value="0"enabled="0"></div>
+                <div class="um" id="1_22" value="0"enabled="0"></div>
+                <div class="um" id="1_23" value="0"enabled="0"></div>
+                <div class="um" id="1_24" value="0"enabled="0"></div>
+                <div class="um" id="1_25" value="0"enabled="0"></div>
+                <div class="um" id="1_26" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 50 poziomu i 25 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="1_31" value="0"enabled="0"></div>
+                <div class="um" id="1_32" value="0"enabled="0"></div>
+                <div class="um" id="1_33" value="0"enabled="0"></div>
+                <div class="um" id="1_34" value="0"enabled="0"></div>
+                <div class="um" id="1_35" value="0"enabled="0"></div>
+                <div class="um" id="1_36" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 80 poziomu i 55 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="1_41" value="0"enabled="0"></div>
+                <div class="um" id="1_42" value="0"enabled="0"></div>
+                <div class="um" id="1_43" value="0"enabled="0"></div>
+                <div class="um" id="1_44" value="0"enabled="0"></div>
+                <div class="um" id="1_45" value="0"enabled="0"></div>
+                <div class="um" id="1_46" value="0"enabled="0"></div>
+            </div>
+            <br>
+        </div>
+
+        <div id="righty">
+            <br>
+            <input id="player_2_lvl" type="number" min="0" max="100" step="1" placeholder="Podaj poziom" style="width: 8em;">
+            <select id="profa2">
+                <option value="" disabled selected hidden>Profesja</option>
+                <option value="trop">Tropiciel</option>
+                <option value="mag">Mag</option>
+                <option value="wojownik">Wojownik</option>
+                <option value="tancerz">Tancerz ostrzy</option>
+                <option value="lowca">Łowca</option>
+                <option value="paladyn">Paladyn</option>
+            </select>
+            <br>
+            <br>
+            <div id="container_2">
+                    <div id="openPoints_2" style="cursor:pointer;position:absolute; left:875px;top:23px;height: 32px;width: 32px;background: url(../assets/icons/lvlup.gif);"></div>
+                    <div id="addPoints_2" style="width:200px;height: 180px;display:none;position:absolute; left:965px;top:50px; border: 2px solid hotpink; background-color: honeydew"> 
+                       <br> Siła<br>
+                            <button id="subStr_2">-</button><input id="str_2" typu="number" step="1" style="width: 5em;"> <button id="addStr_2">+</button>
+                            <br> Intelekt<br>
+                            <button id="subInt_2">-</button><input id="int_2" typu="number" step="1" style="width: 5em;"> <button id="addInt_2">+</button>
+                            <br> Zręczność<br>
+                            <button id="subAgil_2">-</button><input id="agil_2" typu="number" step="1" style="width: 5em;"> <button id="addAgil_2">+</button>
+                            <br><br><button id="closePoints_2">Zamknij</button>
+                    </div>
+                <div id="equip_2" class="equip">
+                    <div id="line_1"></div>
+                    <img id="helm" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_2"></div>
+                    <img id="pier" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="naszyj" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="rece" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_3"></div>
+                    <img id="first" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="zbroja" class="eq_item" src="../assets/icons/item-none.png">
+                    <img id="second" class="eq_item" src="../assets/icons/item-none.png">
+                    <div id="line_4"></div>
+                    <img id="buty" class="eq_item" src="../assets/icons/item-none.png">
+                </div>
+                <div id="mistrz_2" class="mistrz" >
+                
+                </div>
+                <div id="stats_2_1" class="stats">
+                    <hr>
+                    
+                    <div id="dmg_2">Atak: </div>
+                    <hr>
+                    <br>
+                    <div id="hp_2">HP: </div>
+                    <hr>
+                    <br>
+                    <div id="armor_2">Pancerz: </div>
+                    <hr>
+                    <br>
+                    <div id="sa_2">SA: </div>
+                    <hr>
+                    <br>
+                    <div id="odp_2">Odp: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_val_2">Krytyk: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_2">Siła fiz: </div>
+                    <hr>
+                    <br>
+                    <div id="crit_m_2">Siła mag: </div>
+                    <hr>
+                    <br>
+                    <div id="evade_2">Unik: </div>
+                    <hr>
+                    <br>
+                    <div id="block_2">Blok: </div>
+                    <hr>
+                    <br>
+                    <div id="hp_reg_2">Lek tur: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_hp_reg_2">Obn. lek tur: </div>
+                    <hr>
+                </div>
+                <div id="stats_2_2" class="stats">
+                    <hr>
+                    <div id="basic_2">Siła/Int/Zr: </div>
+                    <hr>
+                    <br>
+                    <div id="abs_fiz_2">Abs fiz: </div>
+                    <hr>
+                    <br>
+                    <div id="abs_2">Abs mag: </div>
+                    <hr>
+                    <br>
+                    <div id="energy_2">Energia: </div>
+                    <hr>
+                    <br>
+                    <div id="mana_2">Mana: </div>
+                    <hr>
+                    <br>
+                    <div id="evade_low_2">Ob. uniku: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_slow_2">Ob. sa: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_res_crit_2">Ob. odp/ck: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_energy_mana_2">Nisz.. en/many: </div>
+                    <hr>
+                    <br>
+                    <div id="enemy_low_abs_amror_2">Nisz. abs/panc: </div>
+                    <hr>
+                    <br>
+                    <div id="self_dmg_2">Self dmg: </div>
+                    <hr>
+                    <br>
+                    <div id="legbons_2">Legbony: </div>
+                    <hr>
+                </div>
+            </div>
+            <br>
+            <div class="buttons-container">
+                <button class="clearUM"id="clearUM_2">Wyczyść UM</button>
+                <button class="save"id="save_2">Zapisz set</button>
+                <button class="read"id="read_2">wczytaj set</button>
+            </div>
+            <br>
+            <div id="umPoints_2" class="umpoints">0/0</div>
+            <span class="container-header">Dostępne od 25 poziomu i 1 pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="2_11" value="0"enabled="0"></div>
+                <div class="um" id="2_12" value="0"enabled="0"></div>
+                <div class="um" id="2_13" value="0"enabled="0"></div>
+                <div class="um" id="2_14" value="0"enabled="0"></div>
+                <div class="um" id="2_15" value="0"enabled="0"></div>
+                <div class="um" id="2_16" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 35 poziomu i 10 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="2_21" value="0"enabled="0"></div>
+                <div class="um" id="2_22" value="0"enabled="0"></div>
+                <div class="um" id="2_23" value="0"enabled="0"></div>
+                <div class="um" id="2_24" value="0"enabled="0"></div>
+                <div class="um" id="2_25" value="0"enabled="0"></div>
+                <div class="um" id="2_26" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 50 poziomu i 25 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="2_31" value="0"enabled="0"></div>
+                <div class="um" id="2_32" value="0"enabled="0"></div>
+                <div class="um" id="2_33" value="0"enabled="0"></div>
+                <div class="um" id="2_34" value="0"enabled="0"></div>
+                <div class="um" id="2_35" value="0"enabled="0"></div>
+                <div class="um" id="2_36" value="0"enabled="0"></div>
+            </div>
+            <span class="container-header">Dostępne od 80 poziomu i 55 wykorzystanych pkt umiejętności.</span>
+            <div class="container">
+                <div class="um" id="2_41" value="0"enabled="0"></div>
+                <div class="um" id="2_42" value="0"enabled="0"></div>
+                <div class="um" id="2_43" value="0"enabled="0"></div>
+                <div class="um" id="2_44" value="0"enabled="0"></div>
+                <div class="um" id="2_45" value="0"enabled="0"></div>
+                <div class="um" id="2_46" value="0"enabled="0"></div>
+            </div>
+            <br>
+        </div>
+
+    </div>
+    <div id="downy">
+        <div>
+            <input id="folder_name" type="text" placeholder="nazwa folderu" style="width: 7em;">
+            <input id="quant" type="number" min="0" step="1" placeholder="Ile walk?" style="width: 8em;">
+        </div>
+
+        <button id="notifyBtn">START</button>
+    </div>
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

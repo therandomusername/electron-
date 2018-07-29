@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600');
+
+body {
+    background: #f4f4d4;
+    color:black;
+    font-family: 'Montserrat';
+}
+
+#row-eq {
+    margin-top:50px;
+    border-bottom: 3px solid #FF0057;
+    border-top: 3px solid #FF0057;
+    overflow: hidden;
+    
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#lefty {
+
+    box-sizing: border-box;
+    border-right: 1px solid #FF0057;
+    height: auto;
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.equip{
+    width:230px;
+    float: left;
+   
+    height:160px;
+}
+#righty {
+    box-sizing: border-box;
+    border-left: 1px solid #FF0057;
+    height: auto;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+.stats{
+    
+    padding-left:5px;
+    font-size: 11px;
+    line-height: 3px;
+    float: left;
+    height: auto;
+    width:150px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.buttons-container{
+    clear: both;
+    position:relative;
+    margin-left: 195px;
+}
+
+#downy {
+    clear: both;
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mistrz{
+    background: rgba(0, 0, 0, 0.08);
+    
+    clear: both;
+    position:absolute;
+    top: 235px;
+    height: 130px;
+    width: 180px;
+   margin-left: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 11px;
+    overflow-y: auto;
+}
+
+.container{
+    
+    clear:both;
+     display: table;
+    margin: 0 auto;
+}
+
+.container-header{
+    font-size:12px;
+    font-weight:bold;
+}
+
+.eq_item{
+    box-sizing: border-box;
+    height: 32px;
+    width: 32px;
+    margin-bottom: 4px;
+    background: url(../itemy/ramki.png);
+    
+    position: relative;
+    cursor: pointer;
+}
+
+.mistrzClick{
+    line-height: 12px;
+}
+.mistrzClick:hover{
+    background-color: #b5b6b7;
+}
+.um{
+    box-sizing: border-box;
+    height:50px;
+    width: 80px;
+    background: radial-gradient(ellipse at center,#1c1c1c 1%,#000000 100%,#131313 100%);
+    float:left;
+    border: 2px solid black;
+    margin-left: 6px;
+    font-family: sans-serif;
+    font-size: 10.8px;
+    font-weight: 400;
+    color: #9b9b9b;
+    position: relative;
+    cursor: pointer;
+}
+.um:hover{
+    border: 2px outset #b5b6b7;
+}
+
+.eq_item:hover{
+    border: 1px solid #FF0057;
+}
+
+.umpoints{
+   color: #FF0057;
+}
+#vs{
+    position:absolute;
+    top: 20%;
+    left: 47.5%;
+    font-weight: 600;
+    font-size:51px;
+    color: black;
+    opacity: 0.2;
+    
+    
+}
+.subtext {
+    font-size:.8em;
+    text-transform:uppercase;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+}
+
+.clearUM{
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:5px;
+    cursor:pointer;
+    font-size:11px;
+}
+
+.save{
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:5px;
+    cursor:pointer;
+    font-size:11px;
+    margin-left: 5px;
+}
+.read{
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:5px;
+    cursor:pointer;
+    font-size:11px;
+    margin-left: 5px;
+}
+#notifyBtn {
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:10px;
+    cursor:pointer;
+}

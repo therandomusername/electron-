@@ -1,0 +1,81 @@
+body {
+    background:#f4f4d4;
+    color:#000;
+    overflow:hidden;
+}
+
+p.notify {
+    background:#DFDFDF;
+    margin:0;
+    padding: 20px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: bold;
+    -webkit-app-region: drag;
+    border: 3px inset #c3c3c3;
+    margin-bottom: 10px;
+}
+
+.resultInfo{
+    
+    font-size: 12.5px;
+    line-height: 14px;
+    float: left;
+    height: auto;
+  
+    
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+
+
+.playersInfo{
+    padding-left:5px;
+    font-size: 12.5px;
+    line-height: 14px;
+    float: left;
+    height: auto;
+    width:47%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+.restulTitle{
+ font-size:11.5px;
+
+}
+p.results {
+    margin:0;
+    padding: 2px;
+    text-transform:uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size:12.2px;
+    -webkit-app-region: drag;
+    margin-bottom: 2px;
+}
+.row2 {
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:20px;
+}
+
+input {
+    padding:12px;
+}
+
+#closeBtn {
+    background:#FF0057;
+    border:none;
+    color:#fff;
+    text-transform:uppercase;
+    padding:4px;
+    cursor:pointer;
+    bottom:8px;
+    left: 160px;
+    position:absolute
+}
+  
